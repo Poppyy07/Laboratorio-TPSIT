@@ -97,7 +97,7 @@ ai concetti fondamentali della Bash, analizzando il codice e la sintassi che pos
                 lo switch? differentemente da un if...else, lo switch controlla il valore aritmetico di variabile, e successivamente decide quale operazione eseguire tra 
                 i "casi disponibili". Perche casi? Vediamo un esempio di uno switch:
 
-                switch ${INT_VAR}
+                case in  ${INT_VAR}
 
                 case 1)
 
@@ -110,6 +110,7 @@ ai concetti fondamentali della Bash, analizzando il codice e la sintassi che pos
                 case *)
 
                                 ;;
+                esac
 
                 ognuno dei numeri che si trovano dopo case rappresentano un valore possibile che può assumere INT_VAR. Per quanto riguarda l'asterisco (*) viene
                 utilizzato come caso di default (INT_VAR non assume nessuno dei valori precedentemente posti). Con un doppio ;; rappresentiamo invece la fine del
